@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <h1>formulaire HTML - Démarrage</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Identité</legend>
+
+
+            <label for="nom">Nom*</label>
+            <input type="text" id="pseudo" placeholder="Nom" required>
+
+
+            <br>
+
+            <label for="mdp"> Mot de passe *</label>
+            <input type="password" id="mdp" placeholder="1234" required>
+
+            <br>
+
+            <label for="email"> Mail</label>
+            <input type="email" id="email" placeholder="adresse@gmail.fr">
+
+            <br>
+
+
+            <label for="ville">Ville</label>
+            <select name="destination" id="Ville">
+                <optgroup label="France">
+                    <option value="p">Paris</option>
+                    <option value="m">Marseille</option>
+                    <option value="l">Lille</option>
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="Montreal">Montreal</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Ottawa">Ottawa</option>
+                </optgroup>
+            </select>
+
+
+             <br>
+
+            <label for="postal">Code Postal</label>
+            <input type="text" name="postal" id="postal" placeholder="Code Postal" maxlength="5">
+
+            <br>
+
+
+            <label for="av"> Avatar</label>
+            <input type="file" name="av" id="av">
+
+            <br>
+
+
+
+            <label for="listelivre">Livre</label>
+            <select name="typedelivre" id="Liste">
+                <option value="">Le Troisième Testament</option>
+            </select>
+
+
+
+            <br>
+
+
+            <label for="Jauge">Jauge</label>
+            <input type="range" id="jauge" min="O" max="100" step="5" value="5">
+
+            <br>
+
+            <label for="color">Couleur</label>
+            <input type="color" id="color" value="#ff0000">
+
+
+
+        </fieldset>
+
+
+    </form>
+
+
+    <form>
+
+        <fieldset>
+            <legend>Question</legend>
+
+            <input type="checkbox" id="mars" name="mars" checked>
+            <label for="mars">Mars</label>
+
+            <input type="checkbox" id="chine" name="chine">
+            <label for="chine">Chine</label>
+
+            <input type="checkbox" name="australie" id="australie" name="australie">
+
+            <label for="australie">Australie</label>
+
+
+            <br>
+
+            <label for="Commentaire">Commentaire:</label>
+
+            <textarea name="Commentaire" id="Commentaire" cols="33" rows="5"></textarea>
+        </fieldset>
+
+
+        <label for="utilisation">J'accepte les conditions d'utilisation du site *</label>
+
+        <input type="checkbox" name="utilisation" id="utilisation">
+
+
+
+
+
+        <input type="submit" name="Inscription" valvue="Envoyer" id="Envoyer">
+
+        <input type="submit" name="annuler" value="Annuler" id="Annuler">
+
+
+
+
+    </form>
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/c2dde56bc6.js" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
